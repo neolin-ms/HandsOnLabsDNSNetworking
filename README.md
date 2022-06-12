@@ -4,6 +4,8 @@
 ```bash
 kubectl create namespace bar 
 ```
+Example output:<br>
+
 ## Step.2 Create a coredns-rewrite-podsvc-example.yaml file and copy in the following example YAML:
 ```bash
 nano coredns-rewrite-podsvc-example.yaml
@@ -12,16 +14,19 @@ nano coredns-rewrite-podsvc-example.yaml
 ```bash
 kubectl apply -f coredns-rewrite-example.yaml --namespace bar
 ```
-## Step.4 Check the Pod,Service, run the following command:
+Example output:<br>
+## Step.4 Check the Pod,Service and note the Service IP, run the following command:
 ```bash
 kubectl get -n bar pods,svc 
 ```
-Example output:
+Example output:<br>
+
 ## Step.5 Connect to the pod, run the following command:
 ```bash
 kubectl exec -it [POD_NAME] -n bar -- /bin/sh
 ```
-Example Output:
+Example Output:<br>
+
 ## Step.6 Install the dig tool on the pod, run the following command:
 ```bash
 apt-get update && apt-get install dnsutils -y
@@ -30,6 +35,8 @@ apt-get update && apt-get install dnsutils -y
 ```bash
 dig www.microsoft.com.a +short
 ```
+Example output:<br>
+
 ## Step.8 Create a coredns-rewrite-configmap-example.yaml and copy in the following example YAML:
 ```bash
 nano coredns-rewrite-configmap-example.yaml
@@ -39,9 +46,9 @@ nano coredns-rewrite-configmap-example.yaml
 kubectl apply -f coredns-rewrite-configmap-example.yaml
 kubectl delete pods -n kube-system -l k8s-app=kube-dns
 ```
-Example output:
+Example output:<br>
 ## Step.10 Access your pod(app1) and check if DNS resolution for www.microsoft.com gets an internal IP(with your service CIDR scope) list:
 ```bash
 dig www.microsoft.com.a +short
 ```
-Example output:
+Example output:<br>
