@@ -52,7 +52,7 @@ kubectl apply -f coredns-rewrite-podsvc-example.yaml --namespace bar
 ```
 Example output:<br>
 ![Step03](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step03.png)
-## Step.4 Check the Pod,Service and note the Service IP, run the following command:
+## Step.4 Check the Pod,Service and note the Service IP(CLUSTER-IP), run the following command:
 ```bash
 kubectl get -n bar pods,svc 
 ```
