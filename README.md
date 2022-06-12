@@ -5,7 +5,7 @@
 kubectl create namespace bar 
 ```
 Example output:<br>
-
+![Step01](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step01.png)
 ## Step.2 Create a coredns-rewrite-podsvc-example.yaml file and copy in the following example YAML:
 ```bash
 nano coredns-rewrite-podsvc-example.yaml
