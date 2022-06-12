@@ -68,13 +68,13 @@ Example output:<br>
 ```bash
 apt-get update && apt-get install dnsutils -y
 ```
-## Step.7 Check the DNS resolution for www.microsoft.com, run the following command: We find that get an external IP.
+## Step.7 Check the DNS resolution for www.microsoft.com, run the following command. We find that get an external IP.
 ```bash
 dig www.microsoft.com.a +short
 ```
 Example output:<br>
 ![Step07](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step07.png)
-## Step.8 Create a coredns-rewrite-configmap-example.yaml and copy in the following example YAML. Here is reference [YAML file](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/YAML/coredns-rewrite-configmap-example.yaml).
+## Step.8 Create a coredns-rewrite-configmap-example.yaml and copy in the following example YAML. Please replace the [Your_DNS_Service_IP] to Service IP of Step04. Here is reference [YAML file](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/YAML/coredns-rewrite-configmap-example.yaml).
 ```bash
 nano coredns-rewrite-configmap-example.yaml
 ```
@@ -106,3 +106,8 @@ dig www.microsoft.com.a +short
 ```
 Example output:<br>
 ![Step10](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step10.png)
+## Step.11 Clean up resources.
+```bash
+az group delete -n [AKS_Resource_Group] --no-wait --yes
+az group delete -n [AKS_Nodes_Resource_Group] --no-wait --yes
+```
