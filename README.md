@@ -42,5 +42,6 @@ kubectl delete pods -n kube-system -l k8s-app=kube-dns
 Example output:
 ## Step.10 Access your pod(app1) and check if DNS resolution for www.microsoft.com gets an internal IP(with your service CIDR scope) list:
 ```bash
+dig www.microsoft.com.a +short
 ```
 Example output:
