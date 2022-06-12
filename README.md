@@ -62,6 +62,8 @@ Example output:<br>
 ```bash
 kubectl exec -it [POD_NAME] -n bar -- /bin/sh
 ```
+Example output:<br>
+![Step05](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step05.png)
 ## Step.6 Install the dig tool on the pod, run the following command:
 ```bash
 apt-get update && apt-get install dnsutils -y
