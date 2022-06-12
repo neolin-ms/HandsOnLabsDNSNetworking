@@ -58,7 +58,7 @@ kubectl get -n bar pods,svc
 ```
 Example output:<br>
 ![Step04](https://github.com/neolin-ms/HandsOnLabsDNSNetworking/blob/main/Pics/Step04.png)
-## Step.5 Connect to the pod, run the following command:
+## Step.5 Connect to the pod(app1), run the following command:
 ```bash
 kubectl exec -it [POD_NAME] -n bar -- /bin/sh
 ```
