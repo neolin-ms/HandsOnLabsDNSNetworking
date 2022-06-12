@@ -6,6 +6,7 @@ kubectl create namespace bar
 ```
 ## Step.2 Create a coredns-rewrite-podsvc-example.yaml file and copy in the following example YAML:
 ```bash
+nano coredns-rewrite-podsvc-example.yaml
 ```
 ## Step.3 To create th Pod,Service shown above, run the following command:
 ```bash
@@ -31,6 +32,7 @@ dig www.microsoft.com.a +short
 ```
 ## Step.8 Create a coredns-rewrite-configmap-example.yaml and copy in the following example YAML:
 ```bash
+nano coredns-rewrite-configmap-example.yaml
 ```
 ## Step.9 Apply configmap to your cluster and delete current coredns pods.
 ```bash
