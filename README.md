@@ -1,4 +1,4 @@
-# HandsOnLabsDNSNetworking
+# Hands-On Labs DNS Networking - Scenario 4
 
 ## Step.1 Creat namespace using below command:
 ```bash
